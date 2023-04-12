@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.274)), url(images/project5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.title{
+    width: 300px;
+   margin-left: 100px  
+}
+.title h1{
+    color: white;
+    font-size: 35px;
+}
+.menu{
+    margin-right: 120px;
+}
+.menu ul{
+    padding: 28px 0px;
+}
+.menu ul li{
+    display: inline-block;
+    margin: 0px 20px;
+    list-style-type: none;
+    position: relative;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.menu button{
+    padding: 7px 20px;
+    font-size: 17px;
+    background-color: rgb(204, 0, 255);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.menu button:hover{
+    background-color: rgb(255, 0, 242);
+    transition: 0.3s;
+    
+}
+.menu ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(204, 0, 255);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s;
+}
+.menu ul li:hover::after{
+    width: 100%;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+    justify-content: center;
+}
+.content h1{
+    color: white;
+    text-transform: capitalize;
+    font-size: 55px;
+    margin: 0px 0px 30px 75px;
+}
+.content input{
+    width: 750px;
+    height: 60px;
+    border-radius: 10px;
+    padding-left: 40px;
+    font-size: 15px;
+    position: relative;
+    
+}
+
+.btn{
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    position: absolute;
+    top: 66%;
+    right: 8px;
+    background-color: rgb(204, 0, 255);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:rgb(255, 0, 234);
+    transition: 0.3s;
+    
+}
+.icons{
+   
+    display: flex;
+    margin-top: 310px;
+    margin-left: 450px;
+    
+}
+.icon-child{
+    width: 70px;
+    height: 70px;
+    margin: 8px;
+    background-color: rgba(255, 0, 221, 0.205);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.icon-child img{
+    width: 30px;
+    height: 30px;
+}
+.icon-child, .text{
+    color: white;
+    font-size: 10px;
+    padding: 5px;
+}
+.icon-child:hover{
+    background-color: rgba(255, 0, 221, 0.637);
+}
+
